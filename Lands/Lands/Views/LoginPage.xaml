@@ -88,7 +88,7 @@
                         WidthRequest="100">
                     </Image>
                     <Image
-                        Source="instagram_logo"
+                        Source="insta_logo"
                         WidthRequest="100">
                     </Image>
                 </StackLayout>
