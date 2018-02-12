@@ -3,9 +3,9 @@
     using Xamarin.Forms;
     using Xamarin.Forms.Xaml;
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class LoginPage : ContentPage
+    public partial class LandsPage : ContentPage
 	{
-		public LoginPage ()
+		public LandsPage ()
 		{
 			InitializeComponent ();
 		}
