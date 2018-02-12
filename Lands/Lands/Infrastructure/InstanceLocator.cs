@@ -4,7 +4,7 @@
 
      class InstanceLocator
     {
-        #region Propierties
+        #region Properties
             public MainViewModel Main
             {
                 get;
@@ -15,7 +15,7 @@
         #region Constructors
             public InstanceLocator()
             {
-            this.Main = new MainViewModel();
+                this.Main = new MainViewModel();
             }
         #endregion
     }
