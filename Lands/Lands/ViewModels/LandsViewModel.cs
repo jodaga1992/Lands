@@ -14,7 +14,8 @@
         private ApiService apiService;
         #endregion
 
-        #region Attributes
+        #region 
+        private List<Land> landsList;
         private ObservableCollection<Land> lands;
         #endregion
 
@@ -38,6 +39,17 @@
 
         private async void LoadLands()
         {
+            var connection = await this.apiService.CheckConnection();
+
+            if (!connection.IsSuccess)
+            {
+                await Application.Current.MainPage.DisplayAlert(
+                    "Error",
+                    connection.Message,
+                    "Accept");
+                await Application.Current.MainPage.Navigation.PopAsync();
+                return;
+            }
             var response = await this.apiService.GetList<Land>(
                 "http://restcountries.eu",
                 "/rest",
@@ -52,8 +64,8 @@
                 return;
             }
 
-            var list = (List<Land>)response.Result;
-            this.Lands = new ObservableCollection<Land>(list);
+            this.landsList = (List<Land>)response.Result;
+            this.Lands = new ObservableCollection<Land>(landsList);
         }
 
         #endregion

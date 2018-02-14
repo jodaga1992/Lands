@@ -2,7 +2,7 @@
 {
     using Newtonsoft.Json;
     using System.Collections.Generic;
-    class Land
+    public class Land
     {
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
