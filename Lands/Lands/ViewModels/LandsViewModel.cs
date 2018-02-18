@@ -65,7 +65,7 @@
             }
 
             this.landsList = (List<Land>)response.Result;
-            this.Lands = new ObservableCollection<Land>(landsList);
+            this.Lands = new ObservableCollection<Land>(this.landsList);
         }
 
         #endregion
