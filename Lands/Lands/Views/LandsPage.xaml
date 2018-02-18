@@ -9,6 +9,12 @@
         <StackLayout
             BindingContext="{Binding Lands}"
             Padding="5">
+            <SearchBar
+                BackgroundColor="Silver"
+                Text="{Binding Filter, Mode=TwoWay}"
+                Placeholder="Search..."
+                SearchCommand="{Binding SearchCommand}">
+            </SearchBar>
             <ListView 
                 BackgroundColor="Silver"
                 HasUnevenRows="true" 
