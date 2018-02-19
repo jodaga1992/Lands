@@ -159,6 +159,6 @@
     <BundleResource Include="Resources\ic_record_voice_over.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\ic_speaker_notes.png" />
+    <BundleResource Include="Resources\ic_g_translate.png" />
   </ItemGroup>
 </Project>

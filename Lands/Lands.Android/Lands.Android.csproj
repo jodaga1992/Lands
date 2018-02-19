@@ -125,7 +125,7 @@
     <AndroidResource Include="Resources\drawable\ic_record_voice_over.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_speaker_notes.png" />
+    <AndroidResource Include="Resources\drawable\ic_g_translate.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
