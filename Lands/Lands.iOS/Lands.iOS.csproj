@@ -146,4 +146,19 @@
   <ItemGroup>
     <BundleResource Include="Resources\ic_chevron_right.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_info_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_attach_money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_location_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_record_voice_over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_speaker_notes.png" />
+  </ItemGroup>
 </Project>
