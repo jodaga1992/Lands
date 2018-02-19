@@ -54,6 +54,8 @@
         {
             this.IsRemembered = true;
             this.IsEnabled = true;
+            this.Email = "jodaga1992@hotmail.com";
+            this.Password = "123";
 
             // http://restcountries.eu/rest/v2/all
         }
@@ -92,7 +94,7 @@
             this.IsRunning = true;
             this.IsEnabled = false;
 
-            if (this.Email != "jodaga1992@hotmail.com" || this.Password != "1992jodaga")
+            if (this.Email != "jodaga1992@hotmail.com" || this.Password != "123")
             {
                 this.IsRunning = false;
                 this.IsEnabled = true;
