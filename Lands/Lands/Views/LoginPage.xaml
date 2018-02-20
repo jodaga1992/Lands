@@ -4,7 +4,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Lands.Views.LoginPage"
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
-    Title="Login">
+    Title="Login"
+    xmlns:ff="clr-namespace:Lands.Forms;assembly=Lands.Forms"
+    xmlns:ffSvg="clr-namespace:Lands.Svg.Forms;assembly=Lands.Svg.Forms"
+    xmlns:ffTransformations="clr-namespace:Lands.Transformations;assembly=Lands.Transformations">
     <ContentPage.Content>
         <ScrollView
             BindingContext="{Binding Login}">
@@ -106,6 +109,8 @@
                         WidthRequest="100">
                     </Image>
                 </StackLayout>
+                <ffSvg:SvgCachedImage Source="https://restcountries.eu/data/afg.svg"/>
+                <Image Source="https://restcountries.eu/data/afg.svg" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
