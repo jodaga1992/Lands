@@ -20,12 +20,6 @@
             BindingContext="{Binding Land}">
             <StackLayout
                 Padding="5">
-                <ffimageloading:CachedImage WidthRequest="200" 
-                                            HeightRequest="200" 
-                                            Source="{Binding Land.Flag, 
-                                            Converter={StaticResource SvgImageSourceConverter}}">
-                </ffimageloading:CachedImage>
-
                 <Label
                     FontSize="Large"
                     FontAttributes="Bold"
@@ -33,6 +27,10 @@
                     Text="{Binding Land.Name}"
                     TextColor="Black">
                 </Label>
+                <ffimageloading:CachedImage  
+                        Source="{Binding Land.Flag, 
+                        Converter={StaticResource SvgImageSourceConverter}}">
+                </ffimageloading:CachedImage>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
